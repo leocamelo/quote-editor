@@ -1,6 +1,5 @@
-<main>
-  <%= link_to sanitize("&larr; Back to quotes"), quotes_path %>
-  <div>
-    <h1><%= @quote.name %></h1>
-  </div>
-</main>
+<%= link_to sanitize("&larr; Back to quotes"), quotes_path %>
+
+<div class="flex flex-wrap gap-3 justify-between mt-4 mb-6 md:mb-8">
+  <h1><%= @quote.name %></h1>
+</div>

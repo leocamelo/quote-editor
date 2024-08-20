@@ -14,7 +14,7 @@ SimpleForm.setup do |config|
   # wrapper, change the order or even add your own to the
   # stack. The options given below are used to wrap the
   # whole input.
-  config.wrappers :default do |b|
+  config.wrappers :default, class: "flex-1" do |b|
     ## Extensions enabled by default
     # Any of these extensions can be disabled for a
     # given input by passing: `f.input EXTENSION_NAME => false`.
@@ -52,8 +52,8 @@ SimpleForm.setup do |config|
     # b.optional :readonly
 
     ## Inputs
-    b.use :label
-    b.use :input
+    b.use :label, class: "sr-only"
+    b.use :input, class: "block w-full border-solid border-2 border-neutral-200 py-1.5 px-2 rounded-md transition-shadow focus:shadow-sm", error_class: "border-rose-500"
     # b.use :label_input
     # b.use :hint,  wrap_with: { tag: :span, class: :hint }
     # b.use :error, wrap_with: { tag: :span, class: :error }
@@ -115,7 +115,7 @@ SimpleForm.setup do |config|
 
   # You can define the default class to be used on forms. Can be overridden
   # with `html: { :class }`. Defaulting to none.
-  # config.default_form_class = nil
+  config.default_form_class = "flex flex-wrap gap-2"
 
   # You can define which elements should obtain additional classes
   config.generate_additional_classes_for = []
