@@ -75,7 +75,7 @@ SimpleForm.setup do |config|
   config.boolean_style = :nested
 
   # Default class for buttons
-  config.button_class = "btn"
+  # config.button_class = "btn"
 
   # Method used to tidy up errors. Specify any Rails Array method.
   # :first lists the first message for each field.
@@ -115,7 +115,7 @@ SimpleForm.setup do |config|
 
   # You can define the default class to be used on forms. Can be overridden
   # with `html: { :class }`. Defaulting to none.
-  config.default_form_class = "flex flex-wrap gap-2"
+  config.default_form_class = "flex flex-wrap gap-2 justify-between items-center rounded-md shadow mb-4 p-2 md:px-4 md:py-1.5"
 
   # You can define which elements should obtain additional classes
   config.generate_additional_classes_for = []
@@ -162,7 +162,7 @@ SimpleForm.setup do |config|
   # config.input_class = nil
 
   # Define the default class of the input wrapper of the boolean input.
-  config.boolean_label_class = "checkbox"
+  # config.boolean_label_class = "checkbox"
 
   # Defines if the default input wrapper class should be included in radio
   # collection wrappers.

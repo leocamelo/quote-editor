@@ -1,7 +1,7 @@
-<%= link_to sanitize("&larr; Back to quote"), quote_path(@quote) %>
+<%= link_to sanitize("&larr; Back to quote"), quote_path(@quote), class: "text-rose-500" %>
 
 <div class="flex flex-wrap gap-3 justify-between mt-4 mb-6 md:mb-8">
-  <h1>Edit quote</h1>
+  <h1 class="text-3xl">Edit quote</h1>
 </div>
 
 <%= render "form", quote: @quote %>
