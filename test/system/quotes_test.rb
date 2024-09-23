@@ -17,7 +17,7 @@ class QuotesTest < ApplicationSystemTestCase
     visit quotes_path
     assert_selector "h1", text: "Quotes"
 
-    click_on "New quote"
+    click_on "Add quote"
     fill_in "Name", with: "Capybara quote"
 
     assert_selector "h1", text: "Quotes"
