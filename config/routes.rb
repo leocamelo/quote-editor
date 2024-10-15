@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   resources :quotes do
-    resources :line_item_dates, except: %i[index show]
+    resources :line_item_dates, except: %i[index show] do
+      resources :line_items, except: %i[index show]
+    end
   end
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
